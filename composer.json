@@ -1,0 +1,20 @@
+{
+    "minimum-stability": "dev",
+    "name": "smartrock/facebook-service-provider",
+    "description": "A straightforward Facebook PHP SDK Service provide for Silex",
+    "keywords": ["silex"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Tobal San",
+            "email": "tobalsan@gmail.com"
+        }
+    ],
+    "require": {
+        "silex/silex": "1.0.*",
+        "facebook/php-sdk": "dev-master"
+    },
+    "autoload": {
+        "psr-0": { "SmartRock\\Silex": "src" }
+    }
+}
