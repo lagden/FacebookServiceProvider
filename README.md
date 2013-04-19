@@ -1,7 +1,7 @@
-# SmartRock Silex FacebookServiceProvider
+# Silex FacebookServiceProvider
 =========================================
 
-A straightforward Facebook PHP SDK Service provide for [Silex][1].
+Facebook PHP SDK Service provide for [Silex][1].
 
 Installation
 ------------
@@ -21,7 +21,7 @@ Or [download composer.phar][3] into the project root.
 ### Add FacebookServiceProvider to your composer.json
 
     "require": {
-        "smartrock/facebook-service-provider": "dev-master"
+        "lagden/facebook-service-provider": "dev-master"
     }
 
 ### Install Dependencies
@@ -38,7 +38,7 @@ Registering
 -----------
 
 ```php
-$app->register(new SmartRock\Silex\FacebookServiceProvider(array(
+$app->register(new Lagden\Silex\FacebookServiceProvider(array(
     'facebook.app_id'     => 'Your app id',
     'facebook.app_secret' => 'Your app secret',
 )));
@@ -48,12 +48,3 @@ Usage
 --------
 
 Simply access your facebook object with `$app['facebook']`.
-
-License
--------
-
-The SmartRock FacebookServiceProvider is licensed under the MIT license.
-
-[1]: http://silex.sensiolabs.org/
-[2]: http://getcomposer.org/
-[3]: http://getcomposer.org/composer.phar
