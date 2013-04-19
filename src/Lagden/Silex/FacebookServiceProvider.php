@@ -10,8 +10,8 @@ class FacebookServiceProvider implements ServiceProviderInterface
     {
         $app['facebook'] = $app->share(function () use ($app) {
             return new \Facebook(array(
-                'appId'  => $app['facebook.app_id'];,
-                'secret' => $app['facebook.app_secret'];,
+                'appId'  => $app['facebook.app_id'],
+                'secret' => $app['facebook.app_secret'],
             ));
         });
     }
