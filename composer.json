@@ -1,20 +1,22 @@
 {
     "minimum-stability": "dev",
-    "name": "smartrock/facebook-service-provider",
-    "description": "A straightforward Facebook PHP SDK Service provide for Silex",
-    "keywords": ["silex"],
-    "license": "MIT",
+    "name": "lagden/facebook-service-provider",
+    "description": "Facebook PHP SDK Service provide for Silex",
+    "keywords": ["facebook", "sdk", "silex"],
+    "type": "library",
+    "license": "Apache2",
     "authors": [
         {
-            "name": "Tobal San",
-            "email": "tobalsan@gmail.com"
+            "name": "Thiago Lagden",
+            "email": "lagden@gmail.com"
         }
     ],
     "require": {
-        "silex/silex": "1.0.*",
+        "php": ">=5.3.3",
+        "silex/silex": "1.0.*@dev",
         "facebook/php-sdk": "dev-master"
     },
     "autoload": {
-        "psr-0": { "SmartRock\\Silex": "src" }
+        "psr-0": { "Lagden\\Silex": "src" }
     }
 }
